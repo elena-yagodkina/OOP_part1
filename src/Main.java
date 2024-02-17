@@ -28,8 +28,8 @@ public class Main {
     Hogwarts[] hogwarts = new Hogwarts[gryffindors.length + puffenduys.length + kogtevrans.length + slytherins.length];
     System.arraycopy(gryffindors, 0, hogwarts, 0, gryffindors.length);
     System.arraycopy(puffenduys, 0, hogwarts, gryffindors.length, puffenduys.length);
-    System.arraycopy(kogtevrans, 0, hogwarts, puffenduys.length, kogtevrans.length);
-    System.arraycopy(slytherins, 0, hogwarts, kogtevrans.length, slytherins.length);
+    System.arraycopy(kogtevrans, 0, hogwarts, 6, kogtevrans.length);
+    System.arraycopy(slytherins, 0, hogwarts, 9, slytherins.length);
 
     PrintService printService = new PrintService();
     printService.print(gryffindors);

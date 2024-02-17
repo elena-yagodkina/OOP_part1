@@ -147,21 +147,21 @@ public class PrintService {
   public static void findBestStudentInFaculty (Hogwarts[] hogwarts, String nameStudent1, String nameStudent2) {
     int sum1 = 0;
     int sum2 = 0;
-    for (Hogwarts hogwarts1 : hogwarts) {
-      if (hogwarts1.getName().equals(nameStudent1)) {
-        sum1 = hogwarts1.getTransgression() + hogwarts1.getWitchcraft();
-        System.out.println("Мощность магии " + hogwarts1.getName() + ": " + sum1);
+    for (Hogwarts students : hogwarts) {
+      if (students.getName().equals(nameStudent1)) {
+        sum1 = students.getTransgression() + students.getWitchcraft();
+        System.out.println("Мощность магии " + students.getName() + ": " + sum1);
       }
-      if (hogwarts1.getName().equals(nameStudent2)) {
-        sum2 = hogwarts1.getTransgression() + hogwarts1.getWitchcraft();
-        System.out.println("Мощность магии " + hogwarts1.getName() + ": " + sum2);
+      if (students.getName().equals(nameStudent2)) {
+        sum2 = students.getTransgression() + students.getWitchcraft();
+        System.out.println("Мощность магии " + students.getName() + ": " + sum2);
       }
     }
     if (sum1 > sum2) {
       System.out.println(nameStudent1 + " обладает бОльшей мощностью магии, чем " + nameStudent2);
     }
     else if (sum1 < sum2) {
-      System.out.println(nameStudent2 + " обладает бОльшей мощностью магии " + nameStudent1);
+      System.out.println(nameStudent2 + " обладает бОльшей мощностью магии, чем " + nameStudent1);
     }
   }
 }
